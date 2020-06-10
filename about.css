@@ -1,0 +1,459 @@
+@charset "utf-8";
+
+/* CSS Document */
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Poppins Light'), local('Poppins-Light'), url(https://fonts.gstatic.com/s/poppins/v9/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Miss Fajardose';
+	font-style: normal;
+	font-display: swap;
+	src: local('Miss Fajardose Regular'), local('MissFajardose-Regular'), url(https://fonts.gstatic.com/s/missfajardose/v9/E21-_dn5gvrawDdPFVl-N0Ajb_qoUvc.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+* {
+	font-family: "Poppins";
+	margin: 0px;
+}
+div.header {
+	position: sticky;
+	top: 0px;
+	background-color: black;
+	padding: 15px;
+	width: auto;
+	max-height: 45px;
+	z-index: 20;
+}
+a.menu {
+	padding: 9px 7px 0px 7px;
+	text-align: center;
+}
+a.book {
+	text-align: center;
+	margin-right: 10px;
+	border: 1px solid #FFA107;
+	border-radius: 10px;
+	padding: 7px;
+	background-color: #FFA107;
+}
+a.logo {
+	float: left;
+	margin-left: 15px;
+}
+img.ll {
+	margin-top: 4px;
+	transition: width 100ms, height 100ms;
+}
+.ll:hover {
+	width: 160px;
+	height: 45px;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+}
+li {
+	float: right;
+}
+li a {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 20px;
+	display: block;
+	color: white;
+	padding: 12px;
+	text-align: center;
+	margin-left: 10px;
+	text-decoration: none;
+	transition: font-size 175ms;
+}
+#active {
+	color: #FFA107;
+	font-size: 21px;
+}
+li a.menu:hover:not(#active) {
+	color: #FFA107;
+	font-size: 22px;
+}
+li a.menu:hover {
+	color: #FFA107;
+	font-size: 22px;
+}
+li a.book:hover {
+	font-size: 22px;
+}
+.bgpic {
+	background: url('PICTURES/bg_3.jpg');
+	background-size: cover;
+	display: block;
+	width: 100%;
+	height: 66vh;
+	text-align: center;
+	position: relative;
+	z-index: -1;
+}
+.page {
+	padding-top: 20%;
+	color: white;
+	font-size: 50px;
+	font-weight: 900;
+}
+.path {
+	color: white;
+	font-size: 20px;
+	font-weight: 900;
+}
+div.about {
+	background-color: white;
+	text-align: center;
+}
+.sub {
+	padding-top: 15px;
+	font-family: "Miss Fajardose", cursive;
+	letter-spacing: 10px;
+	color: orange;
+	z-index: -1;
+	font-size: 80px;
+	text-align: center;
+}
+.head {
+	text-align: center;
+	font-family: "Poppins";
+	margin-top: -60px;
+	font-size: 50px;
+}
+.define {
+	padding: 10px 0px 0px 0px;
+	font-size: 25px;
+	margin-left: 15%;
+	width: 75%;
+	text-align: justify;
+}
+div.services {
+	background-color: #F3F3F3;
+	margin-top: 4em;
+	text-align: center;
+}
+div.Birthday {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 30%;
+}
+.birth {
+	margin-top: 10px;
+	font-size: 20px;
+}
+div.icon1 {
+	background: #000000;
+	border: 1px solid black;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+.cake {
+	padding: 30%;
+}
+div.icon2 {
+	background: #000000;
+	border: 1px solid black;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+div.Meetings {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 30%;
+}
+.meeting {
+	padding: 30%;
+}
+.meet {
+	font-size: 20px;
+}
+div.icon3 {
+	background: #000000;
+	border: 1px solid black;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+div.Wedding {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 30%;
+}
+.weeding {
+	padding: 30%;
+}
+.wed {
+	margin-top: 10px;
+	font-size: 20px;
+}
+div.chef {
+	background-color: white;
+	margin-top: 2em;
+	text-align: center;
+}
+div.chef1 {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 20%;
+	margin-top: 20px;
+	border-radius: 100px;
+}
+.c1 {
+	margin-top: 15px;
+	border-radius: 10px;
+	object-fit: cover;
+}
+.cdesc {
+	margin: 0 auto;
+	margin-top: 10px;
+	text-align: center;
+	width: 60%;
+}
+div.chef2 {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 20%;
+	margin-top: 20px;
+	border-radius: 100px;
+}
+div.chef3 {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 20%;
+	margin-top: 20px;
+	border-radius: 100px;
+}
+div.chef4 {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 20%;
+	margin-top: 20px;
+	border-radius: 100px;
+}
+.q {
+	opacity: 0;
+	margin-left: -18%;
+	padding: 0px 60px 300px 200px;
+	transition: opacity 500ms;
+	position: absolute;
+}
+.q:hover {
+	opacity: 1;
+}
+div.reviews {
+	background-color: #F3F3F3;
+	margin-top: 10em;
+	text-align: center;
+}
+div.cust1 {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 350px;
+	margin-top: 20px;
+	border-radius: 50%;
+}
+.cs1 {
+	margin-top: 15px;
+	border-radius: 50%;
+}
+.csdesc {
+	margin: 0 auto;
+	margin-top: 10px;
+	text-indent: center;
+	text-align: center;
+}
+.csname {
+	margin-top: 8px;
+	margin-bottom: 30px;
+}
+div.cust2 {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 350px;
+	margin-top: 20px;
+	border-radius: 100px;
+}
+div.cust3 {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 350px;
+	margin-top: 20px;
+	border-radius: 100px;
+}
+div.cust4 {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 350px;
+	margin-top: 20px;
+	border-radius: 50%;
+}
+div.pics {
+	height: 200px;
+	width: 100%;
+}
+.insta {
+	padding: 40px 117px 66px 100px;
+	display: inline-block;
+	position: absolute;
+	margin-left: -280px;
+	margin-top: 30px;
+	opacity: 0;
+	transition: opacity 500ms;
+}
+.insta:hover {
+	opacity: 1;
+}
+.in {
+	z-index: -1;
+	opacity: 1;
+	transition: opacity 500ms;
+	margin-left: -4px;
+	width: 20%;
+	object-fit: cover;
+}
+.in:hover {
+	opacity: 0.5;
+}
+div.footer {
+	background-color: Black;
+}
+div.name {
+	display: inline-block;
+	padding-top: 50px;
+	margin-left: 50px;
+	width: 20%;
+	color: white;
+	vertical-align: top;
+}
+.fdesc {
+	margin-top: 15px;
+}
+div.hours {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 14%;
+	margin-top: 3.5%;
+	width: 25%;
+	color: white;
+}
+.ftimings {
+	margin-top: 15px;
+}
+.ftime {
+	margin-left: 30px;
+}
+div.newsletter {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 3.5%;
+	width: 22%;
+	color: white;
+}
+.subs {
+	color: white;
+	font-size: 20px;
+	margin-top: 10px;
+	width: 90%;
+	border: 1px solid #FFA107;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #FFA107;
+}
+.email {
+	font-size: 20px;
+	color: white;
+	border-width: 0px;
+	text-align: center;
+	margin-top: 15px;
+	border-radius: 5px;
+	height: 50px;
+	width: 90%;
+	background-color: #2F2F2F;
+}
+@media screen and (max-width:1255px) {
+	.iname {
+		font-size: 20px;
+	}
+}
+@media screen and (max-width:670px) {
+	li {
+		display: block;
+	}
+}
+@media screen and (max-width:800px) {
+
+	div.breakfast,
+	div.lunch,
+	div.Dinner,
+	div.Drinks,
+	div.Wines,
+	div.Dessert,
+	div.Birthday,
+	div.Meeting,
+	div.Wedding,
+	div.chef1,
+	div.chef2,
+	div.chef3,
+	div.chef4,
+	div.cust1,
+	div.cust2,
+	div.cust3,
+	div.cust4 {
+		display: block;
+		width: 100%;
+		margin: auto;
+		padding-top: 10px;
+		margin-top: 25px;
+		margin-bottom: 50px;
+	}
+
+	div.newsletter,
+	div.name,
+	div.hours {
+		display: block;
+		width: 100%;
+		margin: auto;
+		padding: 15px -20px;
+	}
+
+	div.footer {
+		text-align: center;
+	}
+
+	div.chef1,
+	div.chef2,
+	div.chef3,
+	div.chef4 {
+		height: 100%;
+		margin-top: 10px;
+	}
+
+}
+
+@media screen and (max-width:1100px) and (min-width:800px) {
+	div.newsletter {
+		margin-left: 10%;
+	}
+}
